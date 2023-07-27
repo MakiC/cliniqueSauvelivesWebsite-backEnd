@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "educational_contents",
+  "info": {
+    "singularName": "educational-content",
+    "pluralName": "educational-contents",
+    "displayName": "educational_content"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "media": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

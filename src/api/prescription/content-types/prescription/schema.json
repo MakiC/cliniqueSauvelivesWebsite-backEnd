@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prescriptions",
+  "info": {
+    "singularName": "prescription",
+    "pluralName": "prescriptions",
+    "displayName": "prescription"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "medication": {
+      "type": "richtext"
+    },
+    "appointment": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::appointment.appointment"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "instruction": {
+      "type": "text"
+    },
+    "dosage": {
+      "type": "string"
+    }
+  }
+}
